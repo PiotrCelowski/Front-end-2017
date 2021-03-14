@@ -1,0 +1,589 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	 v2.0 | 20110126
+	 License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+	display: block
+
+body
+	line-height: 1
+
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+/* END OF CSS RESET */
+/* JUMBOTRON SECTION */
+.jumbotron
+	height: 100vh
+	width: 100%
+	background-image: url('photos/Layer.png')
+	background-image: length
+	background-attachment: fixed
+	background-position: left
+	background-repeat: no-repeat
+	text-align: center
+	padding: 0
+	padding-top: 20px
+
+	h1
+		margin: 0 auto
+		margin-top: 50px
+		font-size: 65px
+		color: rgb(255,255,255)
+		font-family: "Open Sans", sans-serif
+		font-weight: bold
+		text-align: center
+		width: 70%
+		height: auto
+		text-transform: uppercase
+	p
+		margin: 0 auto
+		margin-top: 20px
+		font-size: 22px
+		color: rgb(255,255,255)
+		font-family: "Raleway", sans-serif
+		font-weight: 100
+		text-align: center
+		width: 60%
+	button
+		margin-top: 75px
+		margin-bottom: 150px
+		width: 15%
+		height: 46px
+		border-radius: 2px
+		background-color: #e74545
+		color: white
+		text-transform: uppercase
+		border: none
+
+	button:hover
+		background-color: #c0392b
+
+	.navbar-default
+		margin: 0 auto
+		line-height: 100px
+		width: 80%
+		height: 100px
+		box-shadow: 0px 1px 0px rgba(255,255,255,0.15)
+		background-color: rgba(255,255,255,0)
+		border-radius: 0
+		display: flex
+		flex-direction: row
+		align-items: center
+		border: none
+		//box-shadow: none
+
+		.navbar-nav
+			float: right
+
+		.container-fluid
+			margin: 0
+			width: 100%
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand 
+	margin: 0
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover
+	color: white
+	background-color: transparent
+	font-size: 13px
+	color: rgb(255,255,255)
+	font-family: "Raleway", sans-serif
+	font-weight: bold
+	text-transform: uppercase
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a:hover
+	color: #c0392b
+
+.navbar-nav
+	width: auto
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+
+/* NOTES SECTION */
+
+.container
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	margin-bottom: 120px
+
+	.note
+		width: 33.3%
+		display: flex
+		flex-direction: column
+
+.note div
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+
+.note div img
+	margin-top: 74px
+	margin-bottom: 35px
+	opacity: 0
+
+.fadeInUp
+	opacity: 1
+	
+.note_text
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	align-content: center
+
+	h2
+		margin-bottom: 5%
+		font-size: 14px
+		color: rgb(45,48,51)
+		font-family: "Raleway", sans-serif
+		font-weight: bold
+		text-align: center
+		text-transform: uppercase
+
+	p
+		font-size: 14px
+		color: rgb(108,114,121)
+		font-family: "Raleway", sans-serif
+		text-align: center
+		padding: 0 12%
+
+/* SECTION GALLERY */
+
+.gallery_interior
+	@extend .container-fluid
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	padding: 0
+	margin-bottom: 100px
+
+.gallery_element
+	padding: 0.5px
+	cursor: pointer
+	width: 25%
+	position: relative
+	img
+		height: 100%
+		width: 100%
+	.photo_hover
+		position: absolute
+		top: 0.5px
+		left: 0.5px
+		width: calc(100% - 1px)
+		height: calc(100% - 1px)
+		opacity: 0
+		background-color: #d13f3f
+		transition: opacity 0.7s ease-in-out
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		overflow: hidden
+		h3
+			font-size: 14px
+			color: rgb(255,255,255)
+			font-family: "Raleway", sans-serif
+			font-weight: bold
+			text-align: center
+			margin-bottom: 10px
+			transform: translateY(500px)
+			transition-delay: 0.7s
+		p
+			font-size: 14px
+			color: rgb(255,255,255)
+			font-family: "Raleway", sans-serif
+			text-align: center
+			transform: translateY(500px)
+			transition-delay: 0.7s
+
+
+
+.gallery_element:nth-child(1) .photo_hover,
+.gallery_element:nth-child(5)  .photo_hover
+	left: 0px
+	width: calc(100% - 0.5px)
+	height: calc(100% - 1px)
+
+.gallery_element:nth-child(1),
+.gallery_element:nth-child(5)
+	padding-left: 0
+
+.gallery_element:nth-child(4),
+.gallery_element:nth-child(8)
+	padding-right: 0
+
+.gallery_element:hover .photo_hover
+	opacity: 0.8
+
+.gallery_element:hover .photo_hover h3,
+.gallery_element:hover .photo_hover p
+	transform: translateY(0)
+
+
+/* SECTION TEAM */
+.team
+	padding: 0 10%
+
+.team_interior
+	@extend .container
+	height: 100%
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+
+.team_member
+	width: 23%
+	margin: 0 1%
+	.team_photo
+		img
+			margin-bottom: 30px
+			width: 100%
+	h2
+		font-size: 22px
+		color: rgb(45,48,51)
+		font-family: "Raleway", sans-serif
+		margin-bottom: 15px
+	h3
+		font-size: 13px
+		color: rgb(232,69,69)
+		font-family: "Raleway", sans-serif
+		text-transform: uppercase
+		margin-bottom: 30px
+	p
+		font-size: 14px
+		color: rgb(108,114,121)
+		font-family: "Raleway", sans-serif
+		margin-bottom: 30px
+		width: 100%
+	i
+		width: 40px
+		height: 40px
+		background-color: #ffffff
+		border: 1px solid #e7ebed
+		color: #c5c9cc
+		text-align: center
+		line-height: 40px
+		cursor: pointer
+	i:hover
+		background-color: #efefef
+
+/* SECTION CAROUSEL */
+.carousela
+	@extend .container
+
+.carousel-indicators
+	left: 70%
+
+.carousel-inner
+	padding: 0 
+	margin: 0
+.item
+	width: 100%
+
+.carousel-inner .item_interior
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	width: 100%
+	padding: 0 
+	margin: 0
+
+.photo_carousel
+	width: 40%
+	padding: 0 
+	margin: 0
+	img
+		width: 100%
+		height: 100%
+		padding: 0
+		margin: 0
+.note_carousel_1
+	width: 60%
+	background-color: #53354a
+	padding: 0 
+	margin: 0
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+	color: white
+	h2
+		margin-left: 15%
+		font-size: 36px
+		color: rgb(255,255,255)
+		font-family: "Cardo", serif
+		font-style: italic
+		width: 70%
+		margin-bottom: 30px
+	p
+		margin-left: 15%
+		font-size: 13px
+		color: rgb(255,255,255)
+		font-family: "Raleway"
+		font-weight: bold
+
+.note_carousel_2
+	@extend .note_carousel_1
+	background-color: #e74c3c
+
+.note_carousel_3
+	@extend .note_carousel_1
+	background-color: #fbff89
+	h2
+		color: black
+	p
+		color: black
+
+/* SECTION READY */
+.questions
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	align-items: center
+	h2
+		font-size: 28px
+		color: rgb(45,48,51)
+		font-family: "Raleway", sans-serif
+		text-align: center
+		margin-bottom: 15px
+	p
+		font-size: 13px
+		color: rgb(45,48,51)
+		font-family: "Raleway"
+		font-weight: bold
+		text-align: center
+		margin-bottom: 30px
+		text-transform: uppercase
+
+	button
+		width: 20%
+		height: 46px
+		border-radius: 2px
+		background-color: #e74545
+		color: white
+		text-transform: uppercase
+		margin-bottom: 100px
+		border: none
+		opacity: 0
+
+	button:hover
+		background-color: #c0392b
+
+/* SECTION CONTACT */
+.contact
+	background-color: #3a3e64
+
+.contact_interior
+	display: flex
+	flex-direction: row
+	h2
+		margin-top: 50px
+		text-align: center
+		font-size: 14px
+		color: rgb(255,255,255)
+		font-family: "Raleway-Bold"
+		font-weight: bold
+		text-transform: uppercase
+		margin-bottom: 20px
+	p
+		width: 40%
+		text-align: center
+		font-size: 14px
+		color: rgb(128,128,128)
+		font-family: "Raleway"
+
+	i
+		color: #ffffff
+		border: 1px solid #ffffff
+		width: 40px
+		height: 40px
+		line-height: 40px
+		cursor: pointer
+	i:hover
+		background-color:  rgb(128,128,128)
+
+.share div
+	text-align: center
+
+.location,
+.share,
+.about
+	flex: 1
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	align-items: center
+	margin-bottom: 75px
+
+.about
+	p
+		width: 70%
+/* FOOTER SECTION */
+footer 
+	line-height: 25px
+	text-align: center
+	padding: 30px auto
+	background-color: #313454
+	p
+		font-size: 14px
+		color: rgb(128,128,128)
+		font-family: "Raleway"
+	i
+		color: #c0392b
+
+	a
+		text-decoration: none
+		color: white
+
+	a:hover
+		text-decoration: none
+		color: #c0392b
+//Responsivness
+@media(max-width: 769px)
+	.jumbotron	
+		height: auto
+
+		button:hover
+			background-color: #e74545
+		button
+			height: 100px
+			width: 50%
+			font-size: 15px
+	.gallery_element
+		width: 50%
+	i:hover
+		background-color: #ffffff		
+	.team_member
+		width: 48%
+		margin-bottom: 20px
+	.note_carousel_1
+		h2
+			font-size: 20px
+		p
+			font-size: 10px
+	.gallery_element:hover .photo_hover
+		opacity: 0
+
+	.gallery_element:hover .photo_hover h3,
+	.gallery_element:hover .photo_hover p
+		transform: translateY(500px)
+	.questions
+		button:hover
+			background-color: #e74545
+		button
+			height: 100px
+			width: 50%
+			font-size: 15px
+	i:hover
+		background-color:  transparent
+
+
+
+
+@media(max-width: 426px)
+	.jumbotron 
+		h1
+			font-size: 25px
+		p
+			font-size: 15px
+		.navbar-default .navbar-nav
+			flex-direction: column
+			float: none
+		.navbar-default
+			height: auto
+		.navbar-brand
+			padding: 0
+			float: none
+			img
+				margin: 0 auto
+		.conatiner-fluid: 
+			display: flex
+			flex-direction: column
+	.container
+		.note
+			width: 50%
+	.note_text
+		h2
+			font-size: 10px
+		p
+			font-size: 10px
+	.gallery_element
+		padding: 0
+		width: 100%
+		padding-bottom: 1px
+	.team_member
+		width: 100%
+	.carousela
+		display: block
+	.photo_carousel
+		width: 0
+	.note_carousel_1
+		width: 100%
+		height: 300px
+	.note_carousel_1
+		h2
+			font-size: 20px
+			margin-bottom: 5px
+		p
+			font-size: 10px
+	.carousel-indicators
+		left: 50%
+	.questions 
+		h2
+			font-size: 25px
+		p
+			font-size: 15px
+	.contact_interior
+		flex-direction: column
+		h2
+			margin-bottom: 0
+	.location,
+	.share,
+	.about	
+		margin-bottom: 20px

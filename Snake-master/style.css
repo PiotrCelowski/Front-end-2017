@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.game_field {
+	margin: 2%;
+	margin-top: 5px;
+}
+.snake {
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	position: absolute;
+}
+.apple {
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	position: absolute;
+}
+.body {
+	background-color:#34495e ;
+}
+body {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+	background-color: #98ca98;
+}
+.score {
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	border-bottom: 1px solid black;
+	width: 500px;
+}
+.score h1,
+.score p {
+	text-align: left;
+	font-size: 30px;
+}

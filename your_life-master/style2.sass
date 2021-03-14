@@ -1,0 +1,603 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	 v2.0 | 20110126
+	 License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+	display: block
+
+body
+	line-height: 1
+
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+/* END OF CSS RESET */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700')
+$mainFont: "Roboto Mono", monospace
+.jumbotron
+	height: 100vh
+	background-image: url('photos/livello.png')
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 50px
+	position: relative
+	margin-bottom: 0
+	z-index: 2
+
+	.navbar-default
+		margin: 0 auto
+		width: 80%
+		background-color: rgba(255,255,255,0)
+		border-radius: 0
+		display: flex
+		flex-direction: row
+		align-items: center
+		border: none
+		height: 50px
+
+	.container-fluid
+		margin: 0
+		width: 100%
+		display: flex
+		justify-content: space-around
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand 
+	margin: 0
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover
+	color: white
+	background-color: transparent
+	font-size: 16px
+	color: rgb(255,255,255)
+	font-family: $mainFont
+	font-weight: bold
+	text-transform: uppercase
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a:hover
+	color: rgb(255,255,255)
+	text-decoration: underline
+.navbar-nav
+	width: auto
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	width: 100%
+	.navbar-header
+		margin-top: -15px
+
+.page-header
+	border: none
+	color: rgb(255,255,255)
+	font-family: $mainFont
+	text-align: center
+	margin-top: 175px
+	h1
+		font-weight: 700
+		font-size: 36px
+		text-transform: uppercase
+	h2
+		font-size: 16px
+		font-weight: 300
+		margin-top: 10px
+
+.btn-success
+	margin-top: 30px
+	height: 50px
+	width: 150px
+	border-radius: 3px
+	background-color: #159f85
+	font-size: 12px
+	color: rgb(255,255,255)
+	font-family: $mainFont
+	font-weight: bold
+	text-transform: uppercase
+	border: none
+	cursor: pointer
+.social
+	width: 100%
+	text-align: center
+	color: white
+	margin-bottom: 0
+	position: absolute
+	bottom: 0
+	i
+		margin: 10px
+		cursor: pointer
+
+@media(max-width: 426px)
+	.jumbotron
+		padding-top: 10px
+		.navbar-default
+			height: auto
+			.container-fluid
+				.navbar-nav
+					flex-direction: column
+					li
+						text-align: center
+						margin-top: 20px
+						a
+							font-size: 30px
+					li:nth-child(3)
+						margin-top: 40px
+	.page-header
+		display: none
+	.social
+		i
+			margin: 20px
+/* REPRESENT SECTION */
+.represent
+	//height: 75vh
+	height: 500px
+	background-color: #f5f6f7
+	margin-top: 0
+	overflow: hidden
+	.container
+		position: relative
+		height: 100%
+		.photo
+			position: absolute
+			top: 50px
+			right: 0
+			z-index: 0
+		.text
+			z-index: 2
+			width: 40%
+			height: 100%
+			position: relative
+			h1
+				font-size: 30px
+				color: rgb(22,160,133)
+				font-family: $mainFont
+				font-weight: bold
+				text-transform: uppercase
+				margin-top: 0
+			p
+				font-size: 15px
+				color: rgb(55,55,55)
+				font-family: $mainFont
+				line-height: 20px
+				margin-top: 50px
+				font-weight: 400
+
+		.button
+			text-align: left
+			button
+				width: 150px
+				z-index: 999
+
+@media(max-width: 769px)
+	.represent
+		.container
+			.text
+				width: 50%
+@media(max-width: 426px)
+	.represent
+		background-color: rgba(227, 231, 234, 0.7)
+		z-index: 0
+		.container
+			background-color: transparent
+			.text
+				width: 100%
+				background-color: transparent
+				z-index: 99
+				p
+					color: black
+
+			.photo
+				z-index: -1
+/* DESIGN */
+.design
+	height: 75vh
+	.container
+		position: relative
+		overflow: hidden
+		height: 100%
+		.photo
+			position: absolute
+			top: 100px
+		.text
+			width: 40%
+			margin-left: 60%
+			height: 100%
+			position: relative
+			overflow: hidden
+			h1
+				font-size: 30px
+				color: rgb(22,160,133)
+				font-family: $mainFont
+				font-weight: bold
+				text-transform: uppercase
+				margin-top: 100px
+			p
+				font-size: 15px
+				color: rgb(55,55,55)
+				font-family: $mainFont
+				line-height: 20px
+				margin-top: 50px
+				font-weight: 400
+			.controls
+				margin-top: 20px
+				height: 50px
+				width: 50px
+				display: flex
+				flex-direction: column
+				.controler
+					color: black
+				.inner-controls
+					display: flex
+					flex-direction: row
+					text-display: center
+					width: 100%
+					justify-content: center
+					align-content: center
+
+				.desc
+					display: flex
+					flex-direction: row
+					text-display: center
+					width: 100%
+					justify-content: center
+					align-content: center
+					p
+						color: black
+						text-display: center
+						margin: 0
+
+@media(max-width: 1025px)
+	.design
+		height: auto
+@media(max-width: 769px)
+	.design
+		.container
+			padding-top: 20px
+			padding-bottom: 20px
+			.text
+				width: 50%
+				margin-left: 50%
+				h1
+					margin-top: 0
+				.controls
+					display: none
+@media(max-width: 426px)
+	.design
+		.container
+			.photo
+				display: none
+			.text
+				width: 100%
+				margin-left: 0
+/* COMMUNITY */
+.community
+	height: 75vh
+	background-color: #f5f6f7
+	.container
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-content: center
+		height: 100%
+		position: relative
+		.our_community
+			width: 30%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			img 
+				margin-bottom: 10px
+			h2
+				font-size: 16px
+				color: rgb(55,55,55)
+				font-family: $mainFont
+				font-weight: bold
+				text-transform: uppercase
+				margin-bottom: 10px
+			p
+				font-size: 15px
+				color: rgb(55,55,55)
+				font-family: $mainFont
+				text-align: center
+				padding: 0 20%
+
+		.karousel
+			width: 70%
+			display: flex
+			flex-direction: column-reverse
+			justify-content: center
+			align-items: center
+			padding-bottom: 25px
+			.item-content
+				display: flex
+				flex-direction: row
+				img
+					margin: 0 20px
+
+			.controls
+				height: 25px
+				width: 50px
+				display: flex
+				flex-direction: column
+				align-self: flex-end
+
+				.controler
+					color: black
+@media(max-width: 1025px)
+	.community
+		.container
+			.our_community
+				img
+					margin-top: 20px
+			.our_community,
+			.karousel
+				width: auto
+				.item-content
+					img
+						margin: 0 5px
+@media(max-width: 769px)
+	.community
+		.container
+			flex-direction: column
+			.our_community 
+				p
+					padding-bottom: 20px
+			.karousel
+				padding-bottom: 0
+				.controls
+					display: none
+@media(max-width: 426px)
+	.community
+		height: auto
+		.container
+				width: 100%
+				overflow: hidden
+			.karousel
+				width: 100%
+				overflow: hidden
+				.item-content
+					flex-direction: column
+					img
+						margin-bottom: 20px
+						width: auto
+/* SUBSCRIBE */
+.subscribe
+	height: 100vh
+	background-image: url('photos/subscribe.png')
+	background-size: cover
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	.visible 
+		opacity: 1 !important
+	.sub
+		opacity: 0
+		h1
+			text-transform: uppercase
+			font-size: 24px
+			color: rgb(255,255,255)
+			font-family: $mainFont
+			font-weight: bold
+			margin-bottom: 20px
+
+		input
+			font-size: 16px
+			color: rgb(55,55,55)
+			font-family: $mainFont
+			text-transform: uppercase
+			border-radius: 0
+			height: 50px
+		button.btn-success
+			height: 50px
+			width: 50px
+			margin: 0
+			border-radius: 0
+		.form-group
+			margin: 0 auto
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			border-radius: 5px
+			overflow: hidden
+			width: 80%
+@media(max-width: 426px)
+	.subscribe
+		.sub
+			h1
+				text-align: center
+/* DOWNLOAD */
+.download
+	height: 50vh
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	h1
+		font-size: 20px
+		color: rgb(55,55,55)
+		font-family: $mainFont
+		font-weight: bold
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 20px
+	p
+		font-size: 15px
+		color: rgb(55,55,55)
+		font-family: $mainFont
+		text-align: center
+		padding: 0 20%
+	.buttons
+		margin-top: 50px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		button.apple
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			width: 20%
+			padding: 0
+			border: none
+			line-height: 50px
+			margin-right: 20px
+			font-size: 16px
+			color: rgb(255,255,255)
+			font-family: $mainFont
+			font-weight: bold
+			text-transform: uppercase
+			border-radius: 5px
+			overflow: hidden
+			opacity: 0
+			div:nth-child(1)
+				margin: 0
+				width: 80%
+				background-color: #1abc9c
+			div:nth-child(2)
+				margin: 0
+				width: 20%
+				height: 100%
+				background-color: #16a085
+				transition: all .5s ease
+			div:nth-child(1):hover
+				background-color: #16a085
+		.play
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			width: 20%
+			padding: 0
+			border: none
+			line-height: 50px
+			font-size: 16px
+			color: rgb(255,255,255)
+			font-family: $mainFont
+			font-weight: bold
+			text-transform: uppercase
+			border-radius: 5px
+			overflow: hidden
+			opacity: 0
+			div:nth-child(1)
+				margin: 0
+				width: 80%
+				background-color: #1abc9c
+			div:nth-child(2)
+				margin: 0
+				width: 20%
+				height: 100%
+				background-color: #16a085
+				transition: all .5s ease
+			div:nth-child(1):hover
+				background-color: #16a085
+@media(max-width: 769px)
+	.download
+		p
+			padding: 0
+		.buttons
+			button.apple
+				width: 50%
+			.play
+				width: 50%
+@media(max-width: 426px)
+	.download
+		height: auto
+		padding-top: 20px
+		padding-bottom: 20px
+/* FOOTER */
+.bottom
+	height: 20vh
+	background-color: #f5f6f7
+	.container
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		height: 100%
+		.credits
+			flex: 2
+			text-align: left
+			.top-row
+				text-align: left
+				a
+					padding: 0 10px
+					text-transform: uppercase
+					font-size: 14px
+					color: rgb(55,55,55)
+					font-family: $mainFont
+					font-weight: bold
+				a:nth-child(2)
+					border-left: 2px solid #15997f
+					border-right: 2px solid #15997f
+			.bottom-row
+				margin-top: 20px
+				text-align: left
+				p
+					font-size: 14px
+					color: rgb(55,55,55)
+					font-family: $mainFont
+					font-weight: bold
+					text-align: left
+					padding: 0 10px
+		.photo	
+			flex: 1
+			text-align: right
+@media(max-width: 426px)
+	.bottom 
+		height: auto
+		.container
+			flex-direction: column
+			.credits
+				.top-row
+					padding-top: 20px
+					text-align: center
+					a
+						text-align: center
+				.bottom-row
+					text-align: center
+					p
+						text-align: center
+		img
+			padding: 20px

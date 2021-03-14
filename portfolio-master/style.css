@@ -1,0 +1,409 @@
+.jumbotron {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden; }
+
+.picture {
+  /*background-image: url('https://static.pexels.com/photos/207171/pexels-photo-207171.jpeg') */
+  background-image: url("photos/sunrise.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.layer {
+  height: 100%; }
+
+.navbar-default {
+  margin: 0 10%;
+  background-color: rgba(255, 0, 0, 0);
+  height: 70px;
+  width: 80%;
+  border: none;
+  font-family: "Fira mono", monospace;
+  z-index: 999;
+  border-radius: 10px;
+  padding: 0 20px; }
+
+.nav-background {
+  border-radius: 10px;
+  height: 100px;
+  width: 100%;
+  left: 0%; }
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li:hover {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 25px;
+  background-color: rgba(255, 0, 0, 0); }
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover {
+  color: white; }
+
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: grey;
+  color: white; }
+
+ul.navbar-nav {
+  float: right; }
+
+@media(max-width: 769px) {
+  .nav > li {
+    display: block;
+    width: 100%;
+    text-align: center; }
+
+  .intro-text {
+    display: none; }
+
+  ul.navbar-nav {
+    float: none; }
+
+  .navbar-header {
+    display: flex;
+    justify-content: center; } }
+.navbar-brand {
+  text-align: center; }
+
+.navbar-brand:hover {
+  color: white; }
+
+.navbar-brand:visited {
+  color: white; }
+
+.navbar-brand:active {
+  color: white; }
+
+.navbar-default a.navbar-brand:focus {
+  color: white !important; }
+  .navbar-default a.navbar-brand:focus small {
+    font-weight: 100; }
+
+.container, .title {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center; }
+
+.title {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%) translateX(-50%);
+  left: 50%;
+  width: 70%;
+  color: white; }
+  .title p {
+    text-align: center;
+    font-family: "Fira mono", monospace;
+    font-size: 60px;
+    font-weight: 900; }
+
+/*############################# ABOUT ME ######################## */
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  justify-content: space-between; }
+
+.notes, .skills {
+  display: flex;
+  padding: 50px 10%;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  color: black; }
+  .notes h1, .skills h1 {
+    font-weight: 900;
+    margin-top: 0; }
+  .notes p, .skills p {
+    font-size: 18px;
+    text-align: left; }
+
+.about_me {
+  padding: 0 20px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+@media(max-width: 768px) {
+  .notes, .skills {
+    flex-direction: column; }
+
+  .about_me {
+    width: 100%; }
+
+  .about {
+    height: auto; } }
+.programming {
+  padding: 0;
+  margin: 0;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  z-index: 1; }
+
+.programming h3,
+.programming p {
+  padding: 0;
+  margin: 0; }
+
+.programming div {
+  width: 25%;
+  object-fit: cover;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px; }
+
+.programming img {
+  height: 70px; }
+
+.about_me h3,
+.about_me p {
+  padding: 0;
+  margin: 0; }
+
+.programming h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: white; }
+
+@media(max-width: 768px) {
+  .programming h3 {
+    font-size: 15px; } }
+.hideme {
+  opacity: 0; }
+
+.developer {
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+  position: relative; }
+
+.parallax-window {
+  height: 100vh;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0; }
+
+.skills {
+  flex-direction: column;
+  width: 100%; }
+
+.programming_header {
+  width: 100%;
+  text-align: center;
+  z-index: 1; }
+  .programming_header h1 {
+    text-align: center;
+    color: white; }
+  .programming_header p {
+    text-align: center;
+    color: white; }
+
+.moto_pic {
+  background-image: url("photos/tim-cook.jpg");
+  background-size: cover;
+  background-position: bottom;
+  width: 30%;
+  height: 100%;
+  margin: 10px; }
+
+@media(max-width: 769px) {
+  .moto_pic {
+    width: 100vw;
+    height: 500px; } }
+/*############################# Projects ######################## */
+.projects {
+  background-color: #ecf0f1;
+  height: 100vh;
+  text-align: center;
+  padding-bottom: 100px;
+  color: black;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .projects h1 {
+    font-weight: 900;
+    margin-top: 0; }
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.gallery .hov {
+  width: 33.3%;
+  height: 300px;
+  position: relative;
+  overflow: hidden; }
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; }
+.gallery .hov {
+  cursor: pointer;
+  padding: 0; }
+.gallery .hov div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(250, 250, 250, 0.5);
+  overflow: hidden;
+  z-index: 2; }
+  .gallery .hov div p {
+    padding: 50px;
+    color: black;
+    text-align: center;
+    font-family: "Fira mono", monospace;
+    font-size: 25px;
+    font-weight: 900;
+    opacity: 0;
+    transition-delay: 0.05s;
+    -webkit-transition-delay: 0.05s;
+    transform: translateY(-200px); }
+.gallery .hov:hover div,
+.gallery .hov.hover div {
+  opacity: 1; }
+.gallery .hov:hover div p,
+.gallery .hov.hover div p {
+  opacity: 1;
+  transition-delay: 0s;
+  transform: translateY(0); }
+
+/*############################# Form ######################## */
+.form {
+  font-family: "Montserrat", sans-serif;
+  padding: 25px 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-image: url("photos/back/lights_mod.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+.bg-info {
+  width: 50%;
+  padding: 20px;
+  background-color: #34495e;
+  border-radius: 20px; }
+  .bg-info .submit {
+    color: white;
+    background-color: #2ecc71;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    line-height: 40px;
+    width: 15%; }
+  .bg-info .textarea {
+    height: 200px; }
+
+.ending-text {
+  width: 100%; }
+  .ending-text h1 {
+    color: black;
+    font-weight: 900;
+    margin-top: 0;
+    text-align: center; }
+  .ending-text p {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 50px; }
+
+.social {
+  text-align: center; }
+
+.fa {
+  color: #34495e;
+  cursor: pointer; }
+
+.fa:hover {
+  color: white; }
+
+/*############################# Footer ######################## */
+.footer {
+  background-color: #34495e;
+  margin: 0; }
+  .footer h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    font-size: 15px;
+    color: white;
+    font-weight: 900;
+    text-align: center; }
+
+@media(max-width: 768px) {
+  .programming div {
+    width: 50%; }
+
+  .about {
+    height: auto; }
+
+  .parallax-window {
+    height: auto; }
+
+  .developer {
+    height: auto; }
+
+  .gallery .hov {
+    width: 100%;
+    height: 500px; }
+
+  .projects {
+    height: auto; }
+
+  .gallery .hov:hover div,
+  .gallery .hov.hover div {
+    display: none;
+    opacity: 0; } }
+@media(max-width: 425px) {
+  .gallery .hov {
+    width: 100vw;
+    height: 300px; } }
+
+/*# sourceMappingURL=style.css.map */

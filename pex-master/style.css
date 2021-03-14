@@ -1,0 +1,536 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* END OF CSS RESET */
+/*################# JUMBOTRON #################### */
+.jumbotron {
+  background-image: url("photos/background.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-bottom: 0; }
+  .jumbotron .navbar-default {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    height: 50px; }
+  .jumbotron .container-fluid {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+  margin: 0; }
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: white;
+  background-color: transparent;
+  font-size: 13px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: right;
+  font-weight: bold;
+  text-transform: capitalize; }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: white;
+  text-decoration: underline; }
+
+.navbar-nav {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%; }
+  .navbar-nav .navbar-header {
+    margin-top: -15px; }
+
+.search {
+  padding: 0;
+  height: 45px;
+  margin-left: 15px;
+  border-radius: 20px;
+  overflow: hidden; }
+  .search form {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%; }
+    .search form input {
+      width: 80%;
+      padding-left: 20px;
+      border: none; }
+    .search form button {
+      background-color: white;
+      border: none;
+      height: 100%;
+      width: 20%; }
+
+.page-header {
+  width: 40%;
+  margin-right: 60%;
+  margin-top: 200px;
+  margin-bottom: 10px;
+  color: white;
+  border: none;
+  text-align: right; }
+  .page-header h1 {
+    font-size: 50px;
+    color: white;
+    text-align: right;
+    margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+    padding-left: 50px; }
+  .page-header button {
+    border-radius: 30px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+    background-color: #8824cd;
+    width: 280px;
+    height: 60px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif; }
+  .page-header button:focus {
+    color: white; }
+  .page-header button:hover {
+    color: white;
+    background-color: #540172; }
+  .page-header p {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    width: 280px;
+    float: right;
+    font-family: "Open Sans", sans-serif; }
+  .page-header div {
+    margin-right: 0; }
+
+@media(max-width: 769px) {
+  .jumbotron {
+    padding-top: 10px;
+    height: auto; }
+    .jumbotron .navbar-default {
+      height: auto; }
+      .jumbotron .navbar-default .container-fluid {
+        flex-direction: column;
+        text-align: center; }
+        .jumbotron .navbar-default .container-fluid .navbar-nav {
+          flex-direction: column;
+          text-align: center;
+          margin: 0 auto; }
+          .jumbotron .navbar-default .container-fluid .navbar-nav li {
+            text-align: center;
+            margin-top: 20px; }
+            .jumbotron .navbar-default .container-fluid .navbar-nav li a {
+              font-size: 20px;
+              text-align: center;
+              line-height: 20px; }
+        .jumbotron .navbar-default .container-fluid .navbar-header {
+          margin: 0 auto;
+          text-align: center; }
+
+  .page-header {
+    display: none; }
+
+  .search {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 80%; } }
+/*################# NOTES #################### */
+.notes {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #2e3b4e;
+  color: white; }
+  .notes .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px; }
+    .notes .container .single_note {
+      width: 50%;
+      margin-bottom: 30px; }
+      .notes .container .single_note h1 {
+        font-size: 15px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-transform: uppercase; }
+      .notes .container .single_note p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 300; }
+
+@media(max-width: 769px) {
+  .notes .container .single_note {
+    padding-left: 20px;
+    padding-right: 20px; } }
+@media(max-width: 426px) {
+  .notes .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column; }
+    .notes .container .single_note {
+      width: 100%; } }
+/*################# wicked #################### */
+.wicked {
+  height: auto;
+  background-image: url("photos/pink_back.png");
+  repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: white; }
+  .wicked .container {
+    padding: 100px;
+    text-align: center; }
+    .wicked .container h1 {
+      font-size: 35px;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 30px; }
+    .wicked .container p {
+      margin: 0 auto;
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 30px;
+      width: 50%; }
+    .wicked .container button {
+      color: #d54c63;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      text-align: center;
+      background-color: white;
+      height: 60px;
+      width: 340px;
+      border-radius: 30px;
+      border: none; }
+    .wicked .container button:hover {
+      background-color: #e50026; }
+
+@media(max-width: 426px) {
+  .wicked .container {
+    padding-left: 0;
+    padding-right: 0; }
+    .wicked .container p {
+      width: 100%;
+      padding: 20px; }
+    .wicked .container button {
+      width: 80%; } }
+/*################# hand #################### */
+.hand {
+  height: auto;
+  display: flex;
+  flex-direction: row; }
+  .hand .left {
+    width: 30%;
+    background-image: url("photos/hand.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto; }
+  .hand .right {
+    padding: 100px;
+    width: 70%;
+    padding-right: 15%; }
+    .hand .right h1 {
+      font-size: 15px;
+      color: #3a4d60;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .hand .right .big_text {
+      font-size: 20px;
+      color: #3a4d60;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      margin-bottom: 30px; }
+    .hand .right .small_text {
+      font-size: 15px;
+      color: #3a4d60;
+      font-family: "Open Sans", sans-serif; }
+
+@media(max-width: 426px) {
+  .hand {
+    flex-direction: column; }
+    .hand .left {
+      width: 100%;
+      height: 50vh; }
+    .hand .right {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px; } }
+/*################# purple_rush ############## */
+.purple_rush {
+  height: auto;
+  background-image: url("photos/mountains.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .purple_rush .container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 100px; }
+    .purple_rush .container h1 {
+      font-size: 40px;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 30px; }
+    .purple_rush .container p {
+      font-size: 20px;
+      color: #a87bb7;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      margin-bottom: 30px; }
+    .purple_rush .container button {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      text-align: center;
+      height: 60px;
+      width: 340px;
+      border-radius: 30px;
+      border: none;
+      box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+      background-color: #8824cd; }
+    .purple_rush .container button:hover {
+      background-color: #3f0056; }
+    .purple_rush .container .butt {
+      color: white;
+      font-size: 12px; }
+
+@media(max-width: 426px) {
+  .purple_rush .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .purple_rush .container button {
+      width: 80%; } }
+/*################# food ############## */
+.food {
+  height: auto;
+  background-image: url("photos/food.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .food .photo_div {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    padding-top: 20%;
+    width: 100%; }
+    .food .photo_div .photography {
+      padding: 10px;
+      border: 2px solid white;
+      width: 135px;
+      border-radius: 17px;
+      font-size: 13px;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px; }
+    .food .photo_div .motto {
+      font-size: 40px;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 30px;
+      font-weight: bold; }
+    .food .photo_div .opinion {
+      display: flex;
+      flex-direction: row;
+      opacity: 0; }
+      .food .photo_div .opinion .photo {
+        background-image: url("photos/developer.png");
+        background-size: fill;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 46px;
+        width: 46px;
+        border-radius: 50%; }
+      .food .photo_div .opinion .text {
+        color: white;
+        font-size: 13px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        line-height: 46px;
+        padding-left: 30px; }
+
+.visible {
+  opacity: 1 !important; }
+
+@media(max-width: 426px) {
+  .food .photo_div {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .food .photo_div .opinion .text {
+      padding-left: 5px;
+      padding-right: 0; } }
+/*################# another hand ############## */
+.another_hand {
+  height: auto;
+  display: flex;
+  flex-direction: row; }
+  .another_hand .right {
+    width: 30%;
+    background-image: url("photos/hand2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto; }
+  .another_hand .left {
+    padding: 100px;
+    width: 70%;
+    padding-right: 15%; }
+    .another_hand .left h1 {
+      font-size: 15px;
+      color: #3a4d60;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .another_hand .left .big_text {
+      font-size: 20px;
+      color: #3a4d60;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      margin-bottom: 30px; }
+    .another_hand .left .small_text {
+      font-size: 15px;
+      color: #3a4d60;
+      font-family: "Open Sans", sans-serif; }
+
+@media(max-width: 426px) {
+  .another_hand {
+    flex-direction: column; }
+    .another_hand .right {
+      width: 100%;
+      height: 50vh; }
+    .another_hand .left {
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%; } }
+/*################# contact ############## */
+.contact {
+  background-color: #e7526b;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
+  .contact .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    margin: 0; }
+    .contact .container h1 {
+      font-size: 15px;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      width: 50%; }
+    .contact .container p {
+      font-size: 15px;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 30px;
+      width: 50%; }
+    .contact .container .email {
+      cursor: pointer; }
+    .contact .container .email:hover {
+      text-decoration: underline; }
+
+@media(max-width: 426px) {
+  .contact .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .contact .container p {
+      width: 100%; } }
+/*################### FOOTER ############### */
+footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #2e3b4e; }
+  footer p {
+    font-size: 12px;
+    color: white;
+    font-family: "Open Sans", sans-serif; }
+
+@media(max-width: 426px) {
+  footer p {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+/*# sourceMappingURL=style.css.map */

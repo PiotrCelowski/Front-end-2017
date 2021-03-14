@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="drum machine">
+	<meta name="keywords" content="drums, samples, mpc, sampler">
+	<meta name="author" content="Piotr Celowski">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Drum-machine</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="key_container">
+			<div data-key="65" class="key">
+				<h1>A<h1>
+				<p>Kick</p>
+			</div>
+			<div data-key="83" class="key">
+				<h1>S</h1>
+				<p>Boom</p>
+			</div>
+			<div data-key="68" class="key">
+				<h1>D</h1>
+				<p>Snare</p>
+			</div>
+			<div data-key="70" class="key">
+				<h1>F</h1>
+				<p>Clap</p>
+			</div>
+			<div data-key="71" class="key">
+				<h1>G</h1>
+				<p>Hihat</p>
+			</div>
+			<div data-key="72" class="key">
+				<h1>H</h1>
+				<p>Crash</p>
+			</div>
+			<div data-key="74" class="key">
+				<h1>J</h1>
+				<p>TOM 1</p>
+			</div>
+			<div data-key="75" class="key">
+				<h1>K</h1>
+				<p>TOM 2</p>
+			</div>
+			<div data-key="76" class="key">
+				<h1>L</h1>
+				<p>TOM 3</p>
+			</div>
+		</div>
+	</div>
+
+	<audio data-key="65" src="sounds/kick.wav"></audio>
+	<audio data-key="83" src="sounds/boom.wav"></audio>
+	<audio data-key="68" src="sounds/snare2.wav"></audio>
+	<audio data-key="70" src="sounds/clap.wav"></audio>
+	<audio data-key="71" src="sounds/hihat.wav"></audio>
+	<audio data-key="72" src="sounds/openhat.wav"></audio>
+	<audio data-key="74" src="sounds/tom1.wav"></audio>
+	<audio data-key="75" src="sounds/tom2.wav"></audio>
+	<audio data-key="76" src="sounds/tom3.wav"></audio>
+
+	<script src="script.js"></script>
+</body>
+</html>
